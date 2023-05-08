@@ -1,1 +1,11 @@
-print("hello world")
+def create_plansza(size): 
+  board = ""
+    for x in range(size):
+      for y in range(size): 
+        plansza +="|_"
+    plansza +="|\n"
+  return plansza
+  
+size = int(input("Podaj rozmiar planszy: "))
+plansza = create_plansza(size)
+print(plansza)
